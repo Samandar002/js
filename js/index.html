@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        .container{
+            width: 1140px;
+            margin: 0 auto;
+        }
+        .box{
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+            background-color: darkgrey;
+            padding: 20px 20px;
+        }
+        .box ul{
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+        }
+        .footer-box{
+            margin: 200px 0;
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+            background-color: darkgrey;
+            padding: 20px 20px;
+          height: 200px;
+        }
+        .footer-box ul{
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+        }
+        .footer-box ul p{
+            margin-top: 10px;
+        }
+        .info p{
+            margin-top: 10px;
+        }
+        .info{
+            border-bottom: 2px solid darkslategrey;
+        }
+        @media (max-width:1100px){
+            .container{
+                width: 1020px;
+            }
+        }
+        @media (max-width:1040px){
+            .container{
+                width: 920px;
+            }
+        }
+        @media (max-width:940px){
+            .container{
+                width: 820px;
+            }
+            .box{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .box ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .container .list{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+        @media (max-width:840px){
+            .container{
+                width: 720px;
+            }
+        }
+        @media (max-width:740px){
+            .container{
+                width: 620px;
+            }
+        }
+        @media (max-width:640px){
+            .container{
+                width: 520px;
+            }
+        }
+        @media (max-width:540px){
+            .container{
+                width: 420px;
+            }
+        }
+        @media (max-width:440px){
+            .container{
+                width: 320px;
+            }
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+
+
+    <header class="header">
+        <div class="container">
+            <h2>Invoice 100</h2>
+            <div class="box">
+                <ul>
+                    <li>
+                        <img src="./img/photo_2022-01-30_11-32-52.jpg" alt="">
+                    </li>
+                    <li style="margin-left: 20px;">
+                        <p>Temarlane & Sons co.
+                            6505 Lngoshore st Ste 240 Dublin, oH    43017
+                        </p>
+                    </li>
+                </ul>
+                <ul class="list">
+                    <li><p>MC</p>
+                    <p>Phone</p>
+                    <p>Email</p>
+                </li>
+                <li>
+                    <p>12345</p>
+                    <p>(445)444 0858</p>
+                    <p>temurids.com@gmail.com</p>
+                </li>
+                </ul>
+            </div>
+           <div class="info" style="width: 100%; display: flex;justify-content: flex-end; padding: 20px 100px;">
+               <ul style="width: 27%; display: flex;justify-content: space-between;align-items: center;">
+                   <li><p>Invose#</p>
+                <p>Ivoice Date</p>
+                <p>Status</p>
+                </li>
+                <li>
+                    <p>1001</p>
+                    <p>01/01/2021</p>
+                    <p style="color: green;">Delivared</p>
+                </li>
+               </ul>
+           </div>
+        </div>
+    </header>
+<section class="section">
+    <div class="container">
+        <div class="section-box" style="display: flex;justify-content: space-between; width: 100%; align-items: center; padding: 20px 20px;">
+            <ul style="display: flex; justify-content: space-between;width: 30%; flex-direction: column; padding: 20px 20px;">
+                <li>Bill To</li>
+                <li>J.B Hunt Transportion</li>
+                <li>6505 Longsher st ste 240</li>
+                <li>Hunt OH 43017</li>
+            </ul>
+            <ul style="width: 34%; display: flex;justify-content: space-between; padding: 20px 40px;"><li>
+                <p>Terms</p>
+                <p>Referense #</p>
+            </li>
+        <li style="margin-right: 40px;">
+            <p>NET 30
+            </p>
+            <p>123546894</p>
+        </li></ul>
+        </div>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Addressa</th>
+                <th scope="col">APP time</th>
+                <th scope="col">APP#</th>
+                <th scope="col">Bol#</th>
+                <th scope="col">Load</th>
+                <th scope="col">Equipment</th>
+
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1 coco cola company</th>
+                <td>jan 1 2021/09/09</td>
+                <td>123456789</td>
+                <td>123456789</td>
+                <td>Dry Load/Live</td>
+                <td>53 Dry Van/poverded</td>
+
+              </tr>
+              <tr>
+                <th scope="row">2 pepsi companiy</th>
+                <td>jan 1 2021/09/09</td>
+                <td>123456789</td>
+                <td>123456789</td>
+                <td>Dry Load/Live</td>
+                <td>53 Dry Van/poverded</td>
+
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-box">
+            <ul>
+                <li>
+                    <img src="./img/photo_2022-01-30_12-05-16.jpg" alt="">
+                </li>
+                <li style="margin-left: 20px;">
+                    <p>
+                        compas Holding INC 6505 lONGSHOERE St Ste240 Hunt , Wi 43017
+                    </p>
+                </li>
+            </ul>
+            <ul>
+                <li><p>Hauling Rate</p>
+                <p>Detenetation</p>
+                <p>Laylover</p>
+                <p><strong>total:</strong></p>
+            </li>
+            <li>
+                <p>$2500.65</p>
+                <p>$100</p>
+                <p>$200</p>
+                <p><strong>$2800.65</strong></p>
+            </li>
+            </ul>
+             
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
