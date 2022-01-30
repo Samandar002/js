@@ -19,6 +19,7 @@
             margin: 0 auto;
         }
         .box{
+            width: 100%;
             display: flex;
             justify-content: space-between;
             /* align-items: center; */
@@ -31,6 +32,21 @@
             justify-content: space-between;
             /* align-items: center; */
         }
+        table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
         .footer-box{
             margin: 200px 0;
             display: flex;
@@ -46,12 +62,56 @@
             justify-content: space-between;
             /* align-items: center; */
         }
+        .section-box{
+            display: flex;
+            justify-content: space-between;
+             width: 100%; 
+             align-items: center;
+              padding: 20px 20px;
+        }
+        .info{
+            width: 100%; display: 
+            flex;justify-content: flex-end; 
+            padding: 20px 100px;
+        }
         .footer-box ul p{
             margin-top: 10px;
         }
         .info p{
             margin-top: 10px;
         }
+        .info ul{
+            width: 27%; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .section-box ul:nth-child(1){
+            display: flex; 
+            justify-content: space-between;
+            width: 30%;
+             flex-direction: column;
+             padding: 20px 20px;
+        }
+        .section-box ul:nth-child(2){
+            width: 34%; 
+            display: flex;
+            justify-content: space-between;
+             padding: 20px 40px;
+        }
+        table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
         .info{
             border-bottom: 2px solid darkslategrey;
         }
@@ -69,28 +129,30 @@
             .container{
                 width: 820px;
             }
-            .box{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-            }
-            .box ul{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-            }
-            .container .list{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-            }
+            
         }
         @media (max-width:840px){
             .container{
                 width: 720px;
+            }
+            .box{
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+            }
+            .box ul{
+                width: 60%;
+            }
+            .list{
+                margin-left: 10px;
+            }
+            .container .info{
+                display: flex;
+                justify-content: center;
+                align-items:center;
+            }
+            .container .info ul{
+                width: 50%;
             }
         }
         @media (max-width:740px){
@@ -106,6 +168,66 @@
         @media (max-width:540px){
             .container{
                 width: 420px;
+            }
+            .box ul:nth-child(1){
+           display: flex;
+           flex-direction: column;
+           align-items:center;
+           width: 100%;
+            }
+            .box ul:nth-child(2){
+                width: 100%;
+            justify-content: space-between;
+            padding: 10px 30px;
+            }
+            .box ul:nth-child(2) li:nth-child(2){
+                margin-left: 40px;
+            }
+            .box ul:nth-child(2) li:nth-child(1){
+                margin-right: -30px;
+            }
+            .container .info{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            .info ul:nth-child(1){
+                padding: 0;
+                margin: 0;
+            width: 100%;   
+            } 
+            .section-box{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }  
+            .footer-box{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+            }
+            .footer-box ul:nth-child(1){
+                width: 100%;
+                display: flex;
+       justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .footer-box ul:nth-child(2){
+                width: 100%;
+            }
+            
+            .section-box ul:nth-child(1){
+                width: 100%;
+            }
+            .section-box ul:nth-child(2){
+                width: 100%;
             }
         }
         @media (max-width:440px){
@@ -147,8 +269,8 @@
                 </li>
                 </ul>
             </div>
-           <div class="info" style="width: 100%; display: flex;justify-content: flex-end; padding: 20px 100px;">
-               <ul style="width: 27%; display: flex;justify-content: space-between;align-items: center;">
+           <div class="info">
+               <ul>
                    <li><p>Invose#</p>
                 <p>Ivoice Date</p>
                 <p>Status</p>
@@ -164,14 +286,14 @@
     </header>
 <section class="section">
     <div class="container">
-        <div class="section-box" style="display: flex;justify-content: space-between; width: 100%; align-items: center; padding: 20px 20px;">
-            <ul style="display: flex; justify-content: space-between;width: 30%; flex-direction: column; padding: 20px 20px;">
+        <div class="section-box">
+            <ul>
                 <li>Bill To</li>
                 <li>J.B Hunt Transportion</li>
                 <li>6505 Longsher st ste 240</li>
                 <li>Hunt OH 43017</li>
             </ul>
-            <ul style="width: 34%; display: flex;justify-content: space-between; padding: 20px 40px;"><li>
+            <ul><li>
                 <p>Terms</p>
                 <p>Referense #</p>
             </li>
@@ -181,6 +303,8 @@
             <p>123546894</p>
         </li></ul>
         </div>
+        
+<div style="overflow-x:auto;">
         <table class="table">
             <thead>
               <tr>
@@ -215,6 +339,7 @@
               </tr>
             </tbody>
           </table>
+          </div>
     </div>
 </section>
 
@@ -248,7 +373,6 @@
         </div>
     </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
+
 </body>
 </html>
